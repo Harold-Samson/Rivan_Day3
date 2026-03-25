@@ -1233,7 +1233,7 @@ If all Cisco, use __EIGRP__
 
 ## 🔀 EIGRP
 Steps in configuring EIGRP
-1. Decide on an ASN
+1. Decide on an ASN Default is 100
 2. Determine Connected Networks
 3. Advertise
 
@@ -2740,7 +2740,7 @@ Remove Dynamic NAT
 !@R1
 clear ip nat trans *
 conf t
- ip nat pool NATPOOL 208.8.8.10 208.8.8.20 netmask 255.255.255.0
+ no ip nat pool NATPOOL 208.8.8.10 208.8.8.20 netmask 255.255.255.0
  no ip nat inside source list 1 pool NATPOOL
  end
 ~~~
